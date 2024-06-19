@@ -1,12 +1,12 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/Hislordshipb/Hislordshipb.git /DQ
+  git clone https://github.com/ihyvesta/AutoFilterBot.git /DQ
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /Hislordshipb
+  git clone $UPSTREAM_REPO /AutoFilterBot
 fi
-cd /Hislordshipb
+cd /AutoFilterBot
 pip3 install -U -r requirements.txt
-echo "Starting Hislordshipb...."
+echo "Starting ...."
 python3 bot.py
